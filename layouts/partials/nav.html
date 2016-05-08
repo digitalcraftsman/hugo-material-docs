@@ -4,6 +4,7 @@
 
 {{ $.Scratch.Set "currentMenuEntry" . }}
 <li>
+  {{ partial "nav_link" $currentNode }}  
   {{ if .HasChildren }}
   <li>
     {{ $currentURL := .URL }}
@@ -13,7 +14,6 @@
       <span class="section">{{ .Section | title }}</span>
       {{ end }}
     {{ end }}
-    
 
     <ul>
       {{ range .Children }}
@@ -22,8 +22,6 @@
       {{ end }}
     </ul>
   </li>
-  {{ else }}
-    {{ partial "nav_link" $currentNode }}  
   {{ end }}
 </li>
 {{ end }}
