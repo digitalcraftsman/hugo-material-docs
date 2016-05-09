@@ -5,25 +5,15 @@
 {{ $.Scratch.Set "currentMenuEntry" . }}
 <li>
   {{ if .HasChildren }}
-  <li>
-    {{ $currentURL := .URL }}
-
-    {{ range $.Site.Pages }}
-      {{ if eq (printf "%s%s" $.Site.BaseURL $currentURL) ( printf "%s" .Permalink) }}
-      <span class="section">{{ .Section | title }}</span>
-      {{ end }}
-    {{ end }}
-    
-
+    <span class="section">{{ .Name | title }}</span>
     <ul>
       {{ range .Children }}
         {{ $.Scratch.Set "currentMenuEntry" . }}
-        {{ partial "nav_link" $currentNode }}  
+        {{ partial "nav_link" $currentNode }}
       {{ end }}
     </ul>
-  </li>
   {{ else }}
-    {{ partial "nav_link" $currentNode }}  
+    {{ partial "nav_link" $currentNode }}
   {{ end }}
 </li>
 {{ end }}
