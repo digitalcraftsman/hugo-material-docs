@@ -1,6 +1,7 @@
 ---
 date: 2016-03-09T00:11:02+01:00
 title: Getting started
+weight: 10
 ---
 
 ## Installation
@@ -206,9 +207,10 @@ Once you created your first content files you can link them manually in the side
   name   = "Material"
   url    = "/"
   weight = 0
+  pre    = ""
 ```
 
-`name` is the title displayed in the menu and `url` the relative URL to the content. The `weight` attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add.
+`name` is the title displayed in the menu and `url` the relative URL to the content. The `weight` attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add. The `pre` attribute is optional and allows you to *pre*pend elements to a menu link, e.g. an icon.
 
 Instead of just linking a single file you can enhance the sidebar by creating a nested menu. This way you can list all pages of a section instead of linking them one by one (without nesting).
 

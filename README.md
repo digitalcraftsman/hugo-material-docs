@@ -9,7 +9,7 @@ A material design theme for [Hugo](https://gohugo.io).
 Install with `git`:
 
 ```sh
-git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes
+git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-material-docs
 ```
 
 Next, take a look in the `exampleSite` folder at. This directory contains an example config file and the content for the demo. It serves as an example setup for your documentation. 
@@ -24,9 +24,7 @@ hugo server
 ```
 
 Now you can go to [localhost:1313](http://localhost:1313) and the Material
-theme should be visible.
-
-For detailed installation instructions visit the [demo](https://digitalcraftsman.github.io/hugo-material-docs/).
+theme should be visible. For detailed installation instructions visit the [demo](http://themes.gohugo.io/theme/material-docs/).
 
 Noteworthy changes of this theme are listed in the [changelog](https://github.com/digitalcraftsman/hugo-material-docs/blob/master/CHANGELOG.md).
 

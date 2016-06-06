@@ -1,6 +1,15 @@
 # Changelog
 
-### 2016-03-22
+
+### 11th May 2016
+
+#### Add templates for section lists
+
+Sections such as www.example.com/foo/ will now be rendered with a list of all pages that are part of this section. The list shows the pages' title and a summary of their content.
+
+[Show me the diff](https://github.com/digitalcraftsman/hugo-material-docs/commit/1f8393a8d4ce1b8ee3fc7d87be05895c12810494)
+
+### 22nd March 2016
 
 #### Changing setup for Google Analytics
 
