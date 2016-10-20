@@ -6,6 +6,7 @@ metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
+DefaultContentLanguage = "en"
 
 [params]
 	# General information
@@ -76,3 +77,9 @@ googleAnalytics = ""
 	fractions = true
 	smartDashes = true
 	plainIDAnchors = true
+
+[Languages]
+[Languages.en]
+weight = 1
+[Languages.ja]
+weight = 2
