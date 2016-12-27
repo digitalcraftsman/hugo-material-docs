@@ -1,8 +1,9 @@
----
-date: 2016-03-09T20:10:46+01:00
-title: License
-weight: 40
----
++++
+date = 2016-12-23T20:10:46+01:00
+title = "License"
+[menu.main]
+  weight = 40
++++
 
 Copyright (c) 2016 Digitalcraftsman <digitalcraftsman@protonmail.com><br>
 Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
@@ -24,4 +25,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
-
