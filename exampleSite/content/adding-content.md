@@ -1,8 +1,9 @@
----
-date: 2016-03-09T19:56:50+01:00
-title: Adding content
-weight: 20
----
++++
+date = 2016-12-25T19:56:50+01:00
+title = "Adding content"
+[menu.main]
+  weight = 20
++++
 
 ## Hello world
 
