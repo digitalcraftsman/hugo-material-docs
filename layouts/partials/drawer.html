@@ -1,5 +1,5 @@
 <nav aria-label="Navigation">
-  <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL }}{{ end }}" class="project">
+  <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL | relLangURL }}{{ end }}" class="project">
     <div class="banner">
       {{ with .Site.Params.logo }}
         <div class="logo">

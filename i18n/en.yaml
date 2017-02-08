@@ -1,0 +1,8 @@
+- id: default.copyright
+  translation: "Documentation built with [Hugo](https://www.gohugo.io) using the [Material](http://github.com/digitalcraftsman/hugo-material-docs) theme"
+
+- id: footer.button.prev
+  translation: "Previous"
+
+- id: footer.button.next
+  translation: "Next"
