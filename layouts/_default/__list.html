@@ -19,6 +19,22 @@
 
 	<article class="article">
 		<div class="wrapper">
+			{{ if .IsTranslated }}
+			<div class="dropdown-container">
+				<div class="toggle-button dropdown" role="button" aria-label="Languages">
+					<div class="dropdown-button">{{ .Site.Language.LanguageName }}</div>
+					<span class="dropdown-caret icon icon-link"></span>
+					<div class="dropdown-content">
+						{{ range .Translations }}
+							{{ if ne .Language.Lang $.Site.Language.Lang }}
+							<a class="toggle-button" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+							{{ end }}
+						{{ end}}
+					</div>
+				</div>
+			</div>
+			{{ end }}
+
 			<h1>Pages in {{ .Title | singularize }}</h1>
 
 			{{ range .Data.Pages }}
@@ -36,7 +52,7 @@
 				{{ with .Site.Params.copyright }}
 				&copy; {{ $.Now.Format "2006" }} {{ . }} &ndash;
 				{{ end }}
-				{{ i18n "default.copyright" | markdownify }}
+				{{ i18n "global.copyright" | markdownify }}
 			</aside>
 		</div>
 	</article>
