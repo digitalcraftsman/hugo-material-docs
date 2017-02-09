@@ -25,6 +25,9 @@ blockquote {
 	display: inline-block;
 	font-size: 18px;
 	padding: 13px 0px;
+
+	-webkit-transition:color .25s;
+    transition:color .25s;
 }
 
 .dropdown-caret {
@@ -36,10 +39,10 @@ blockquote {
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 
-    -webkit-transition: 150ms linear all;
-    -moz-transition: 150ms linear all;
-    -o-transition: 150ms linear all;
-    transition: 150ms linear all;
+    -webkit-transition: 250ms linear all;
+    -moz-transition: 250ms linear all;
+    -o-transition: 250ms linear all;
+    transition: 250ms linear all;
 }
 
 .dropdown:hover .dropdown-content {
