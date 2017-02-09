@@ -1,0 +1,15 @@
+{{ if .IsTranslated }}
+<div class="dropdown-container">
+    <div class="toggle-button dropdown" role="button" aria-label="Languages">
+        <div class="dropdown-button">{{ .Site.Language.LanguageName }}</div>
+        <span class="dropdown-caret icon icon-link"></span>
+        <div class="dropdown-content">
+            {{ range .Translations }}
+            {{ if ne .Language.Lang $.Site.Language.Lang }}
+            <a class="toggle-button" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+            {{ end}}
+        </div>
+    </div>
+</div>
+{{ end }}
