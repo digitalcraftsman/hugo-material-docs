@@ -1,0 +1,11 @@
+- id: global.copyright
+  translation: "Documentatie gemaakt met [Hugo](https://www.gohugo.io) waarbij gebruik is gemaakt van het [Material](http://github.com/digitalcraftsman/hugo-material-docs) thema"
+
+- id: header.button.language
+  translation: "Taal"
+
+- id: footer.button.prev
+  translation: "Vorige"
+
+- id: footer.button.next
+  translation: "Volgende"

@@ -9,3 +9,145 @@ blockquote {
     font-size: inherit;
     border-left: 5px solid #eee;
 }
+
+.dropdown-container {
+	position:relative;
+}
+
+.dropdown {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+    display: inline-block;
+}
+
+.dropdown-button {
+	display: inline-block;
+	font-size: 18px;
+	padding: 13px 0px;
+
+	-webkit-transition:color .25s;
+    transition:color .25s;
+}
+
+.dropdown-caret {
+	display: inline-block;
+
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    -webkit-transition: 250ms linear all;
+    -moz-transition: 250ms linear all;
+    -o-transition: 250ms linear all;
+    transition: 250ms linear all;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropdown-caret {
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.dropdown-content {
+	background: #ffffff;
+	position: absolute;
+	right: 0px;
+	z-index: 100;
+	display: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.dropdown-content a {
+	font-size: 18px;
+	border: none;
+	padding: 10px;
+}
+
+.article.wrapper {
+	padding: 78px 24px 96px
+}
+
+.palette-primary-red .dropdown:hover .dropdown-button, .palette-primary-red .dropdown:hover .dropdown-caret {
+	color:#e84e40;
+}
+
+.palette-primary-pink .dropdown:hover .dropdown-button, .palette-primary-pink .dropdown:hover .dropdown-caret {
+	color:#e91e63;
+}
+
+.palette-primary-purple .dropdown:hover .dropdown-button, .palette-primary-purple .dropdown:hover .dropdown-caret {
+  color:#ab47bc;
+}
+
+.palette-primary-deep-purple .dropdown:hover .dropdown-button, .palette-primary-deep-purple .dropdown:hover .dropdown-caret {
+  color:#7e57c2;
+}
+
+.palette-primary-indigo .dropdown:hover .dropdown-button, .palette-primary-indigo .dropdown:hover .dropdown-caret {
+  color:#3f51b5;
+}
+
+.palette-primary-blue .dropdown:hover .dropdown-button, .palette-primary-blue .dropdown:hover .dropdown-caret {
+  color:#5677fc;
+}
+
+.palette-primary-light-blue .dropdown:hover .dropdown-button, .palette-primary-light-blue .dropdown:hover .dropdown-caret {
+  color:#03a9f4;
+}
+
+.palette-primary-cyan .dropdown:hover .dropdown-button, .palette-primary-cyan .dropdown:hover .dropdown-caret {
+  color:#00bcd4;
+}
+
+.palette-primary-teal .dropdown:hover .dropdown-button, .palette-primary-teal .dropdown:hover .dropdown-caret {
+  color:#009688;
+}
+
+.palette-primary-green .dropdown:hover .dropdown-button, .palette-primary-green .dropdown:hover .dropdown-caret {
+  color:#259b24;
+}
+
+.palette-primary-light-green .dropdown:hover .dropdown-button, .palette-primary-light-green .dropdown:hover .dropdown-caret {
+  color:#7cb342;
+}
+
+.palette-primary-lime .dropdown:hover .dropdown-button, .palette-primary-lime .dropdown:hover .dropdown-caret {
+  color:#c0ca33;
+}
+
+.palette-primary-yellow .dropdown:hover .dropdown-button, .palette-primary-yellow .dropdown:hover .dropdown-caret {
+  color:#f9a825;
+}
+
+.palette-primary-amber .dropdown:hover .dropdown-button, .palette-primary-amber .dropdown:hover .dropdown-caret {
+  color:#ffb300;
+}
+
+.palette-primary-orange .dropdown:hover .dropdown-button, .palette-primary-orange .dropdown:hover .dropdown-caret {
+  color:#fb8c00;
+}
+
+.palette-primary-deep-orange .dropdown:hover .dropdown-button, .palette-primary-deep-orange .dropdown:hover .dropdown-caret {
+  color:#ff7043;
+}
+
+.palette-primary-brown .dropdown:hover .dropdown-button, .palette-primary-brown .dropdown:hover .dropdown-caret {
+  color:#795548;
+}
+
+.palette-primary-grey .dropdown:hover .dropdown-button, .palette-primary-grey .dropdown:hover .dropdown-caret {
+  color:#757575;
+}
+
+.palette-primary-blue-grey .dropdown:hover .dropdown-button, .palette-primary-blue-grey .dropdown:hover .dropdown-caret {
+  color:#546e7a;
+}

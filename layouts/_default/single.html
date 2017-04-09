@@ -24,6 +24,8 @@
 
 	<article class="article">
 		<div class="wrapper">
+			{{ partial "language_button" . }}
+
 			<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
 
 			{{ .Content }}
@@ -32,10 +34,7 @@
 				{{ with .Site.Params.copyright }}
 				&copy; {{ now.Format "2006" }} {{ . }} &ndash;
 				{{ end }}
-				Documentation built with
-				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
-				using the
-				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+				{{ i18n "global.copyright" | markdownify }}
 			</aside>
 
 			<footer class="footer">
