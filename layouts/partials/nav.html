@@ -5,7 +5,18 @@
 {{ $.Scratch.Set "currentMenuEntry" . }}
 <li>
   {{ if .HasChildren }}
+
+    {{ $currentMenuEntry := $.Scratch.Get "currentMenuEntry" }}
+    {{ $.Scratch.Set "foundIndex" false }}
+    {{ range where $.Site.Pages ".URLPath.URL" "==" $currentMenuEntry.URL }}
+      {{ $.Scratch.Set "foundIndex" true }}
+    {{ end }}
+
+    {{ if $.Scratch.Get "foundIndex" }}
+    <span class="parent_section">{{ partial "nav_link" $currentNode }}</span>
+    {{ else }}
     <span class="section">{{ .Name | title }}</span>
+    {{ end }}
     <ul>
       {{ range .Children }}
         {{ $.Scratch.Set "currentMenuEntry" . }}
