@@ -1,9 +1,9 @@
 {{ if .IsPage }}
-{{ if .Prev | or .Next }}
+{{ if .PrevInSection | or .NextInSection }}
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
-  {{ if .Prev }}
-      <a href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
+  {{ if .NextInSection }}
+      <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
         <span class="direction">
           Previous
         </span>
@@ -13,7 +13,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              {{ .Prev.Title }}
+              {{ .NextInSection.Title }}
             </div>
           </div>
         </div>
@@ -22,15 +22,15 @@
   </div>
 
   <div class="next">
-  {{ if .Next }}
-      <a href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+  {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              {{ .Next.Title }}
+              {{ .PrevInSection.Title }}
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -39,35 +39,6 @@
         </div>
       </a>
   {{ end }}
-  </div>
-</nav>
-{{ end }}
-{{ end }}
-
-{{ if .IsHome }}
-{{ if gt (len .Site.Pages) 2 }}
-<nav class="pagination" aria-label="Footer">
-  <div class="previous">
-  </div>
-
-  {{ $title := (index (.Site.Pages.ByDate) 1).Title  }}
-  {{ $permalink := (index (.Site.Pages.ByDate) 1).Permalink }}
-  <div class="next">
-      <a href="{{ $permalink }}" title="{{ $title }}">
-        <span class="direction">
-          Next
-        </span>
-        <div class="page">
-          <div class="stretch">
-            <div class="title">
-              {{ $title }}
-            </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
-          </div>
-        </div>
-      </a>
   </div>
 </nav>
 {{ end }}
