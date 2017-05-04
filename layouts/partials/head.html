@@ -70,7 +70,7 @@
     {{ end }}
     <script src="{{ "javascripts/modernizr.js" | absURL }}"></script>
 
-    {{ with .RSSLink }}
+    {{ with .Site.RSSLink }}
     <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
     <link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
     {{ end }}
