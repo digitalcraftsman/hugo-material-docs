@@ -12,7 +12,7 @@ Install with `git`:
     git clone https://github.com/digitalcraftsman/hugo-material-docs.git themes/hugo-material-docs
 
 
-Next, take a look in the `exampleSite` folder at. This directory contains an example config file and the content for the demo. It serves as an example setup for your documentation. 
+Next, take a look in the [`exampleSite` folder](https://github.com/digitalcraftsman/hugo-material-docs/tree/master/exampleSite). This directory contains an example config file and the content for the demo. It serves as an example setup for your documentation. 
 
 Copy at least the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary. 
 
