@@ -205,11 +205,12 @@ Once you created your first content files you can link them manually in the side
 [[menu.main]]
   name   = "Material"
   url    = "/"
-  weight = 0
+  weight = 1
   pre    = ""
 ```
 
-`name` is the title displayed in the menu and `url` the relative URL to the content. The `weight` attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add. The `pre` attribute is optional and allows you to *pre*pend elements to a menu link, e.g. an icon.
+`name` is the title displayed in the menu and `url` the relative URL to the content. The `weight` attribute allows you to modify the order of the menu entries. A menu entry appears further down the
+ more weight you add. Weight should be at least 1. The `pre` attribute is optional and allows you to *pre*pend elements to a menu link, e.g. an icon.
 
 Instead of just linking a single file you can enhance the sidebar by creating a nested menu. This way you can list all pages of a section instead of linking them one by one (without nesting).
 
@@ -220,7 +221,7 @@ menu:
   main:
     parent: Material
     identifier: <link name>
-    weight: 0
+    weight: 1
 ```
 
 `main` specifies to which menu the content file should be added. `main` is the only menu in this theme by default. `parent` let's you register this content file to an existing menu entry, in this case the `Material` link. Note that the parent in the frontmatter needs to match the name in `config.toml`.
