@@ -4,6 +4,7 @@ title = "Material Docs"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
+themesDir = "../.."
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
 
