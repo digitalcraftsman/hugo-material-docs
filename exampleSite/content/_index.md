@@ -30,7 +30,7 @@ git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-mat
 
 - Beautiful, readable and very user-friendly design based on Google's material
   design guidelines, packed in a full responsive template with a well-defined
-  and [easily customizable color palette]({{< relref "getting-started/index.md#changing-the-color-palette" >}}), great typography, as well as a
+  and [easily customizable color palette]({{< relref "getting-started#changing-the-color-palette" >}}), great typography, as well as a
   beautiful search interface and footer.
 
 - Well-tested and optimized Javascript and CSS including a cross-browser
@@ -38,14 +38,14 @@ git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-mat
   the [checkbox hack](http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/) with fallbacks, responsive tables that scroll when
   the screen is too small and well-defined print styles.
 
-- Extra configuration options like a [project logo]({{< relref "getting-started/index.md#adding-a-logo" >}}), links to the authors
-  [GitHub and Twitter accounts]({{< relref "getting-started/index.md#adding-a-github-and-twitter-account" >}}) and display of the amount of stars the
+- Extra configuration options like a [project logo]({{< relref "getting-started#adding-a-logo" >}}), links to the authors
+  [GitHub and Twitter accounts]({{< relref "getting-started#adding-a-github-and-twitter-account" >}}) and display of the amount of stars the
   project has on GitHub.
 
 - Web application capability on iOS – when the page is saved to the homescreen,
   it behaves and looks like a native application.
 
-See the [getting started guide]({{< relref "getting-started/index.md" >}}) for instructions how to get
+See the [getting started guide]({{< relref "getting-started" >}}) for instructions how to get
 it up and running.
 
 ## Acknowledgements
